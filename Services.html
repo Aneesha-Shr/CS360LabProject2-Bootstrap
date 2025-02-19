@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="stylesheet.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+  <body>
+    <div class="container-fluid p-5 my-5 bg-dark text-white">
+        <!-- Side Nav -->
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="Bootstrap_Webpage.html" target="_blank">Photos</a>
+            <a href="Services.html" target="_blank">Blog</a>
+            <a href="Client.html" target="_blank">Bio</a>
+            <a href="Contact.html" target="_blank">Contact</a>
+            <a href="https://www.facebook.com/" class="fa fa-facebook" target="_blank"></a>
+            <a href="https://x.com/?mx=2" class="fa fa-twitter" target="_blank"></a>
+            <a href="https://www.instagram.com/" class="fa fa-instagram" target="_blank"></a>
+          </div>
+
+                    <!-- Use any element to open the sidenav -->
+                    <span onclick="openNav()">Menu</span>
+
+                    <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+                    <div id="main">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum posuere ante at nulla porttitor, vel fermentum nisl eleifend. Mauris id nisi quis nisi pharetra 
+                            aliquam tincidunt sed orci. Phasellus eget sapien at nisi tempus varius. Fusce nec consectetur libero. Quisque lacinia id eros nec consequat. Quisque ut justo 
+                            pretium, lacinia diam in, convallis justo. Morbi pretium ante dolor.
+                
+                            Integer ac venenatis libero. Aliquam laoreet laoreet pellentesque. Sed aliquet quam a maximus tincidunt. Pellentesque habitant morbi tristique senectus et netus 
+                            et malesuada fames ac turpis egestas. Etiam cursus ultricies lorem, vitae tempus sem consectetur id. Fusce non imperdiet dolor, vitae sodales odio. Integer vitae 
+                            ipsum quis lectus efficitur cursus vel eget sem. Etiam mollis porta neque, nec porta purus interdum non.
+                
+                            Cras volutpat quam vel malesuada maximus. Duis eu ante vitae leo ultricies pharetra vitae at orci. In hac habitasse platea dictumst. Ut a dignissim tellus. Sed 
+                            efficitur, augue sed volutpat dignissim, dui est sodales neque, nec ullamcorper ex velit id purus. Vivamus sagittis leo ut luctus placerat. Pellentesque ac gravida 
+                            ex. Vivamus lacinia, lorem at bibendum dapibus, nisl magna tincidunt ante, efficitur sollicitudin mi arcu a leo. In sit amet ornare turpis. Aenean sollicitudin in 
+                            metus sit amet aliquam. Etiam consectetur imperdiet justo et vestibulum. Suspendisse in dui lobortis eros mattis lacinia auctor eu massa. Phasellus ornare eu elit 
+                            vel maximus. Nullam ultricies vitae elit a finibus. Nam quis sollicitudin neque, in cursus odio. Aenean finibus tempor nisi ac auctor.
+                
+                            Duis dignissim nunc et facilisis dapibus. Vestibulum libero nibh, maximus vitae tellus in, maximus interdum magna. Donec elementum, ante eget porttitor rhoncus, 
+                            massa lacus tempor est, ac dignissim tellus erat vitae massa. Mauris hendrerit tortor ex, eget finibus mi varius ultrices. Proin eget suscipit turpis. Fusce viverra
+                             augue eu hendrerit sodales. Duis tristique odio ut sollicitudin molestie. Etiam imperdiet leo eget egestas ullamcorper. Mauris gravida dolor consequat ornare 
+                             venenatis. Duis a mi id sem mollis commodo. Pellentesque eu scelerisque enim, quis imperdiet nisl. Aenean quam ex, pellentesque quis tincidunt vitae, semper eget 
+                             orci. Ut ut lorem at erat fermentum tincidunt mollis eu libero. Sed iaculis non arcu quis laoreet. Nulla facilisi.
+                
+                            Cras dapibus nibh ac condimentum sollicitudin. Vestibulum eget finibus felis, ut feugiat est. Vivamus at leo quis orci ullamcorper tincidunt ac a tortor. 
+                            Sed vel luctus lacus, quis sollicitudin dolor. Pellentesque purus justo, pulvinar id posuere at, pulvinar vel tortor. In posuere leo lacus, sed eleifend dui gravida
+                             eget. Curabitur massa felis, bibendum quis sollicitudin vitae, congue eget neque. Fusce euismod dui leo, sed consequat purus placerat sed. Vivamus arcu nisl, 
+                             dictum non pretium non, sodales id massa. Aliquam at nisl ultrices, tristique urna eu, rutrum nisi. In viverra sem in venenatis euismod. Vivamus at nibh nisl. Ut
+                              tempor dui ac turpis porta lobortis. Pellentesque risus ligula, condimentum vitae turpis a, molestie euismod massa.
+                        </p>
+                    </div>
+        
+                        <script>
+                                /* Set the width of the side navigation to 250px */
+                            function openNav() {
+                                document.getElementById("mySidenav").style.width = "250px";
+                            }
+        
+                            /* Set the width of the side navigation to 0 */
+                            function closeNav() {
+                                document.getElementById("mySidenav").style.width = "0";
+                            }
+        
+                            function openNav() {
+                                document.getElementById("mySidenav").style.width = "250px";
+                                document.getElementById("main").style.marginLeft = "250px";
+                                document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+                            }
+        
+                            /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
+                            function closeNav() {
+                                document.getElementById("mySidenav").style.width = "0";
+                                document.getElementById("main").style.marginLeft = "0";
+                                document.body.style.backgroundColor = "white";
+                            }
+                        </script>
+
+    </div>
+  </body>
+</html>
